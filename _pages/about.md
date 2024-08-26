@@ -18,6 +18,10 @@ social: true # includes social icons at the bottom of the page
 Hi, I'm Guglielmo Grillo, but you will most likely find me online as **NerusSkyhigh**.  
 I am a PhD student in Physics at the University of Trento (Statistical and Biological Physics group) with a strong passion for computer science. This passion led me to choose a computational path both for my curricular and extracurricular classes during my bachelor's and Master's degrees and to work on personal projects in my free time. I’m also one of the founding members of Progetto Apollo, a scientific divulgation group operating at the University of Trento in collaboration with Arditodesìo. Since 2019 I’ve been a tutor for the University of Trento. My hobbies include video games, DMing d&d campaigns and parkour.
 
+
+> This site is currently being updated. I am migrating from [fastpages.ai](https://fastpages.fast.ai/) to [jekyll](https://jekyllrb.com/). Content will be added shortly.
+
+
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
