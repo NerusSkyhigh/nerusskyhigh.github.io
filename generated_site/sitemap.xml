@@ -2,38 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://guglielmogrillo.com/</loc>
-         <lastmod>2025-02-25</lastmod>
+         <lastmod>2025-03-01</lastmod>
     </url>
     <url>
-         <loc>http://guglielmogrillo.com/bash/</loc>
-         <lastmod>2025-02-25</lastmod>
+         <loc>http://guglielmogrillo.com/draft_2024-09-02-presentation-tips/</loc>
+         <lastmod>2025-03-01</lastmod>
     </url>
     <url>
-         <loc>http://guglielmogrillo.com/chiedere-aiuto/</loc>
-         <lastmod>2025-02-25</lastmod>
+         <loc>http://guglielmogrillo.com/projects/</loc>
+         <lastmod>2025-03-01</lastmod>
     </url>
     <url>
-         <loc>http://guglielmogrillo.com/persone/</loc>
-         <lastmod>2025-02-25</lastmod>
-    </url>
-    <url>
-         <loc>http://guglielmogrillo.com/syllabus/</loc>
-         <lastmod>2025-02-25</lastmod>
-    </url>
-    <url>
-         <loc>http://guglielmogrillo.com/pratica/01_Basi_di_Python_con_Jupyter/</loc>
-         <lastmod>2025-02-25</lastmod>
-    </url>
-    <url>
-         <loc>http://guglielmogrillo.com/pratica/ambiente-di-lavoro/</loc>
-         <lastmod>2025-02-25</lastmod>
-    </url>
-    <url>
-         <loc>http://guglielmogrillo.com/teoria/25-02-26%20Intro%20corso%20calcolatori/</loc>
-         <lastmod>2025-02-25</lastmod>
-    </url>
-    <url>
-         <loc>http://guglielmogrillo.com/teoria/controllo-del-flusso/</loc>
-         <lastmod>2025-02-25</lastmod>
+         <loc>http://guglielmogrillo.com/resume/</loc>
+         <lastmod>2025-03-01</lastmod>
     </url>
 </urlset>
