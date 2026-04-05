@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a PhD student in Physics at the University of Trento with a strong passion for computer science, computational
+    methods, and scientific communication. I work on computational models and machine learning pipelines for complex
+    physical and biological systems.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="PhD Student in Statistical and Biological Physics"
+      subtitle="Nov 2023 to present at University of Trento, Italy"
+    >
+      Scholarship topic: combining physics, biology, and machine learning to understand genome organization in cancer
+      cells.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Master's Degree in Physics"
+      subtitle="Sep 2020 to Mar 2023 at University of Trento, Italy"
+    />
+    <TimeLineElement
+      title="Bachelor's Degree in Physics"
+      subtitle="Sep 2016 to Mar 2020 at University of Trento, Italy"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Tutor and Teaching Assistant"
+      subtitle="Sep 2019 to present at University of Trento, Italy"
+    >
+      In class courses, I prepared exercises and followed students with guided hints. In laboratory courses, I helped
+      students collect, analyze, and interpret data with a rigorous scientific approach.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Founding Member - Progetto Apollo"
+      subtitle="2017 to 2022 at University of Trento / Arditodesio"
+    >
+      Scientific storytelling and communication activities, including live performances for Teatro della Meraviglia,
+      CO.SCIENZA Festival, Focus Days, and collaborative events with Caltech.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Junior Scientist Internship"
+      subtitle="Jul 2015 at Fondazione Bruno Kessler (FBK), Italy"
+    >
+      Studied the effects of NaCl concentration on water droplet contact angles over different substrates in static and
+      dynamic regimes.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://cyberchallenge.it/" target="_blank">CyberChallenge.IT (University of Trento and CINI)</a>
+    </li>
+    <li>
+      <a href="https://webmagazine.unitn.it/evento/ateneo/69296/samsung-innovation-camp" target="_blank"
+        >Innovation Camp Diploma (University of Trento in partnership with Samsung)</a
+      >
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-3 columns-2 mx-6">
+    <li>Python</li>
+    <li>C</li>
+    <li>LAMMPS</li>
+    <li>NumPy and SciPy</li>
+    <li>Pandas and scikit-learn</li>
+    <li>PyTorch</li>
+    <li>Matplotlib and Jupyter</li>
+    <li>Machine Learning</li>
+    <li>Scientific Computing</li>
+    <li>Data Analysis</li>
+    <li>Physics Modeling</li>
+    <li>FPGA basics</li>
+  </ul>
+</BaseLayout>

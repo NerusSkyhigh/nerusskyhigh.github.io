@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hi, I am</div>
+    <div class="text-5xl font-bold">Guglielmo Grillo</div>
+    <div class="text-3xl py-3 font-bold">aka NerusSkyhigh</div>
+    <p class="py-2 text-lg text-justify">
+      I am a PhD student in Physics at the University of Trento (Statistical and Biological Physics group) with a
+      strong passion for computer science. This passion led me to choose a computational path both for my curricular
+      and extracurricular classes during my bachelor's and master's degrees and to work on personal projects in my
+      free time.
+    </p>
+    <p class="py-2 text-lg text-justify">
+      I am also one of the founding members of Progetto Apollo, a scientific divulgation group operating at the
+      University of Trento in collaboration with Arditodesio. Since 2019 I have been a tutor for the University of
+      Trento. My hobbies include video games, DMing dnd campaigns, and parkour.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a class="btn" href="mailto:contactme@guglielmogrillo.com">Email</a>
+      <a href="mailto:cv@guglielmogrillo.com" class="btn btn-outline">CV Email</a>
+      <a href="https://www.linkedin.com/in/guglielmo-grillo/" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <a href="https://github.com/NerusSkyhigh" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">University Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Percolation - Theory and Applications"
+    img="/post_img.webp"
+    desc="Brief introduction to Bernoulli percolation with a review on the critical point, slides, and interactive simulations for visualization."
+    url="https://github.com/NerusSkyhigh/percolation/"
+    badge="Physics"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Machine Learning Phases of Matter"
+    img="/post_img.webp"
+    desc="Reproduces results from Carrasquilla and Melko on phase transition detection in the 2D Ising model with feed-forward neural networks."
+    url="https://github.com/NerusSkyhigh/Machine-Learning-Phases-of-Matter"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="A Game of Life - FPGA Project"
+    img="/post_img.webp"
+    desc="Final project for Laboratory of Advanced Electronics implementing Conway's Game of Life on FPGA with VGA output."
+    url="https://github.com/NerusSkyhigh/LoAE-code"
+    badge="FPGA"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.id)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
