@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Selected Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="A Game of Life - Laboratory of Advanced Electronics"
+    img="/post_img.webp"
+    desc="Code for the exercises and final project for the Laboratory of Advanced Electronics course, including an FPGA implementation of Conway's Game of Life with VGA output."
+    url="https://github.com/NerusSkyhigh/LoAE-code"
+    badge="2021-2022"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Machine Learning Phases of Matter - Advanced Computational Physics"
+    img="/post_img.webp"
+    desc="Reproduction of the paper results on identifying Ising model phase transitions using feed-forward neural networks."
+    url="https://github.com/NerusSkyhigh/Machine-Learning-Phases-of-Matter"
+  />
+
+  <HorizontalCard
+    title="Percolation - Theory and Applications"
+    img="/post_img.webp"
+    desc="Brief introduction to Bernoulli percolation with a review on the critical point, presentation slides, and interactive simulations."
+    url="https://github.com/NerusSkyhigh/percolation/"
+    badge="2023"
+  />
+</BaseLayout>
