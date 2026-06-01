@@ -5,7 +5,13 @@ site_url: http://guglielmogrillo.com/
 # Navigation bar configuration
 nav:
   - Homepage:         index.md
-  - Resumè:           resume.md
+  - Resumè:
+    - resume.md
+    - In Details:
+      - Awards: cv/awards-certificates.md
+      - Education: cv/education-accademia.md
+      - Skills: cv/skills.md
+      - Work Experience: cv/work-experience.md
   #- Blog:             index.md
   - Projects:         projects.md
   #- PhD and Teaching: index.md
@@ -52,15 +58,17 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
-  - attr_list
   - md_in_html
   - pymdownx.blocks.caption
-
+  - neoteroi.timeline # https://www.neoteroi.dev/mkdocs-plugins/timeline/
 
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - css/neoteroi-mkdocs.css # https://github.com/Neoteroi/mkdocs-plugins
 
 
 # References:

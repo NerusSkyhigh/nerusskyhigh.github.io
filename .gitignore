@@ -1,0 +1,11 @@
+# General
+.DS_Store
+
+draft_*
+
+# Specific files
+sources/assets/codes/fastsqrt.c
+sources/assets/images/complimenti.webp
+
+# Specific folders
+sources/templates
